@@ -70,4 +70,4 @@ Happy listening with DoogFM!
 [stars-shield]: https://img.shields.io/github/stars/OugiFormula/DoogFM.svg?style=for-the-badge
 [stars-url]: https://github.com/OugiFormula/DoogFM/stargazers
 [license-shield]: https://img.shields.io/github/license/OugiFormula/DoogFM.svg?style=for-the-badge
-[license-url]: https://github.com/OugiFormula/DoogFM/blob/master/LICENSE.txt
+[license-url]: https://github.com/OugiFormula/DoogFM/master/LICENSE.txt
