@@ -51,7 +51,7 @@ const App: React.FC = () => {
           rel="noopener noreferrer"
           className="kofi-banner"
         >
-          <img className="kofi-banner" src="/kofi_button.png" alt="Support me on Ko-fi" />
+          <img className="kofi-banner" src="./kofi_button.png" alt="Support me on Ko-fi" />
         </a>
       </div>
     </div>
