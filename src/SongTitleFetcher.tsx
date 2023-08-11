@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import spotify from '../src/assets/spotify.png';
 
 interface SongTitleFetcherProps {
   radioUrl: string;
@@ -34,17 +35,29 @@ const SongTitleFetcher: React.FC<SongTitleFetcherProps> = ({ radioUrl }) => {
     return () => clearInterval(interval);
   }, [radioUrl]);
 
+  const handleSpotifySearch = () => {
+    if (artist && title) {
+      const spotifySearchUrl = `https://open.spotify.com/search/${encodeURIComponent(
+        artist + ' ' + title
+      )}`;
+      window.open(spotifySearchUrl, '_blank');
+    }
+  };
+
   return (
-    <>
+    <div>
       {artist && title ? (
         <div>
           <h2>{title}</h2>
-          <p>by {artist}</p>
+          <p>{artist}</p>
+          <button onClick={handleSpotifySearch}>
+            <img src={spotify} alt="Spotify" />
+            </button>
         </div>
       ) : (
         <p>Loading...</p>
       )}
-    </>
+    </div>
   );
 };
 

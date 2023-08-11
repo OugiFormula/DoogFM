@@ -10,14 +10,13 @@ interface RadioPlayerProps {
 
 const RadioPlayer: React.FC<RadioPlayerProps> = ({ radioUrl, audioRef }) => {
   const [volume, setVolume] = useState(0.5);
-  const volumeRef = useRef<number>(0.5); // Use useRef to store initial volume
-  const [isPaused, setIsPaused] = useState(true); // Add isPaused state
+  const volumeRef = useRef<number>(0.5);
+  const [isPaused, setIsPaused] = useState(true);
 
   useEffect(() => {
     if (audioRef?.current) {
       audioRef.current.src = radioUrl;
 
-      // Set the initial volume only once when the audio element is created
       if (!audioRef.current.hasAttribute('data-initialized')) {
         audioRef.current.volume = volumeRef.current;
         audioRef.current.setAttribute('data-initialized', 'true');
@@ -25,7 +24,7 @@ const RadioPlayer: React.FC<RadioPlayerProps> = ({ radioUrl, audioRef }) => {
 
       if (!audioRef.current.paused) {
         audioRef.current.volume = volume;
-        setIsPaused(false); // Update the play/pause state based on the audio element's paused status
+        setIsPaused(false);
       }
     }
   }, [radioUrl, audioRef]);
@@ -37,7 +36,7 @@ const RadioPlayer: React.FC<RadioPlayerProps> = ({ radioUrl, audioRef }) => {
       } else {
         audioRef.current.pause();
       }
-      setIsPaused(!audioRef.current.paused); // Update the play/pause state based on the audio element's paused status
+      setIsPaused(!audioRef.current.paused);
     }
   };
 
@@ -46,13 +45,12 @@ const RadioPlayer: React.FC<RadioPlayerProps> = ({ radioUrl, audioRef }) => {
     if (audioRef?.current) {
       audioRef.current.volume = volumeValue;
       setVolume(volumeValue);
-      volumeRef.current = volumeValue; // Update the volumeRef when the volume changes
+      volumeRef.current = volumeValue;
     }
   };
 
   return (
     <div className="radio-player">
-      {/* Your existing code for radio player controls */}
       <audio ref={audioRef} onVolumeChange={() => {}}>
         Your browser does not support the audio element.
       </audio>
@@ -62,9 +60,9 @@ const RadioPlayer: React.FC<RadioPlayerProps> = ({ radioUrl, audioRef }) => {
       <div className="controls-container">
         <button className="play-pause-button" onClick={handlePlayPause}>
           {isPaused ? (
-            <img src={pauseImage} alt="Pause" /> // Use the imported play image
+            <img src={pauseImage} alt="Pause" />
           ) : (
-            <img src={playImage} alt="Play" /> // Use the imported pause image
+            <img src={playImage} alt="Play" />
           )}
         </button>
         <input

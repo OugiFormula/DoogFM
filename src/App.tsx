@@ -37,13 +37,13 @@ const App: React.FC = () => {
         <ArtworkFetcher radioUrl={radioUrl} />
       </div>
       <div className="input-container">
-        <Favorites setRadioUrl={setRadioUrl} />
         <input
           type="text"
           placeholder="Enter radio URL"
           value={radioUrl}
           onChange={handleInputChange}
         />
+        <Favorites setRadioUrl={setRadioUrl} />
       </div>
       <div className="logo-container">
         <img src={logo} alt="Logo" className="logo" />
