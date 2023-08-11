@@ -3,6 +3,8 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  --light-text-color: black;
+  --dark-text-color: white;
 }
 
 body {
@@ -114,6 +116,7 @@ div.radio-player {
 }
 
 .favorites-popup-container .favorites-popup {
+  color: white;
   position: absolute;
   top: 50px;
   right: 10px;
@@ -218,6 +221,20 @@ div.radio-player {
   border-radius: 50%;
   background: #fff; /* White slider thumb */
   cursor: pointer;
+}
+
+/* Media query for dark mode */
+@media (prefers-color-scheme: dark) {
+  .favorites-popup button {
+    color: var(--dark-text-color);
+  }
+}
+
+/* Media query for light mode */
+@media (prefers-color-scheme: light) {
+  .favorites-popup button {
+    color: var(--light-text-color);
+  }
 }
 
 @media (max-width: 768px) {
