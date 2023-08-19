@@ -53,6 +53,7 @@ const Popup: React.FC<PopupProps> = ({ onClose }) => {
   Whether you're discovering new tracks or revisiting old favorites, DoogFM is here to amplify your radio experience.
   Listen, save, and explore – all with the click of a button. 🎧🌐
 </p>
+<a href="http://www.internet-radio.com">Search For Internet Radio Here! </a>
 
         <div className="buttons">
           <a href="https://ko-fi.com/yukiokoito">Ko-fi</a>
