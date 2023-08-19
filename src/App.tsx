@@ -4,7 +4,8 @@ import SongTitleFetcher from './SongTitleFetcher';
 import ArtworkFetcher from './ArtworkFetcher';
 import logo from '../src/assets/logo.png';
 import Favorites from './Favorites';
-import Popup from './Popup'; // Import the Popup component
+import Popup from './Popup';
+import ChatWidget from './ChatWidget';
 
 import './App.css';
 
@@ -69,6 +70,7 @@ const App: React.FC = () => {
           <img className="kofi-banner" src="./kofi_button.png" alt="Support me on Ko-fi" />
         </a>
       </div>
+      <ChatWidget />
     </div>
   );
 };
