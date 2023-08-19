@@ -3,12 +3,12 @@ import React, { useEffect } from 'react';
 const ChatWidget: React.FC = () => {
   useEffect(() => {
     const script = document.createElement('script');
-    script.id = 'cid0020000353449558353';
+    script.id = 'cid0020000353465547461';
     script.dataset.cfasync = 'false';
     script.async = true;
     script.src = '//st.chatango.com/js/gz/emb.js';
-    script.style.width = '257px';
-    script.style.height = '331px';
+    script.style.width = '315px';
+    script.style.height = '280px';
 
     const scriptConfig = {
       handle: 'doogfm',
@@ -22,20 +22,15 @@ const ChatWidget: React.FC = () => {
         l: '000000',
         m: '000000',
         n: 'FFFFFF',
-        p: '10',
         q: '000000',
         r: 100,
-        t: 0,
-        usricon: 0,
         pos: 'bl',
         cv: 1,
         cvbg: '000000',
-        cvw: 100,
-        cvh: 18,
-        surl: 0,
-        cnrs: '0.35',
+        cvfg: 'ffffff',
+        cvw: 148,
+        cvh: 26,
         ticker: 1,
-        fwtickm: 1,
       },
     };
 
