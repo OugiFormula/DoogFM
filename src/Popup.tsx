@@ -16,7 +16,7 @@ const Popup: React.FC<PopupProps> = ({ onClose }) => {
     <div className="popup-container">
       <div className="popup-content">
         <img src={logo} alt="Logo" className="logo" />
-        <p>v1.0 RELEASE</p>
+        <p>v1.1 RELEASE</p>
         <h1>Welcome to DoogFM - Your Ultimate Online Radio Player!</h1>
         <p>
   <strong>🎶 Introducing DoogFM: Elevate Your Radio Experience 🎶</strong>
@@ -53,8 +53,6 @@ const Popup: React.FC<PopupProps> = ({ onClose }) => {
   Whether you're discovering new tracks or revisiting old favorites, DoogFM is here to amplify your radio experience.
   Listen, save, and explore – all with the click of a button. 🎧🌐
 </p>
-<a href="http://www.internet-radio.com">Search For Internet Radio Here! </a>
-
         <div className="buttons">
           <a href="https://ko-fi.com/yukiokoito">Ko-fi</a>
           <a href="https://github.com/OugiFormula">GitHub</a>

@@ -27,6 +27,25 @@ body {
   margin-top: 20px; /* Adjust the margin as needed */
 }
 
+.song-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  margin: 0 auto; /* Center vertically */
+  max-width: 400px; /* Adjust the max-width as needed */
+}
+
+.title-artist-container {
+  flex: 1; /* Let the title and artist container take the available space */
+  text-align: center;
+}
+
+.spotify-button {
+  cursor: pointer;
+  margin-right: 15px; /* Adjust the spacing between Spotify button and text */
+  margin-left: 15px; 
+}
+
 /* Add the glow effect to the artwork image */
 .artwork-image {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Adjust the glow effect as needed */
@@ -258,6 +277,24 @@ div.radio-player {
     right: 20px;
     position: fixed;
     z-index: 9999;
+  }
+  .song-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    margin: 0 auto; /* Center vertically */
+    max-width: 400px; /* Adjust the max-width as needed */
+  }
+  
+  .title-artist-container {
+    flex: 1; /* Let the title and artist container take the available space */
+    text-align: center;
+  }
+  
+  .spotify-button {
+    cursor: pointer;
+    margin-right: 15px; /* Adjust the spacing between Spotify button and text */
+    margin-left: 15px;
   }
 }
 

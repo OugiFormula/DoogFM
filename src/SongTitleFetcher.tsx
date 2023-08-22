@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import spotify from '../src/assets/spotify.png';
+import youtube from '../src/assets/youtube.png';
+import './App.css';
 
 interface SongTitleFetcherProps {
   radioUrl: string;
@@ -44,19 +46,41 @@ const SongTitleFetcher: React.FC<SongTitleFetcherProps> = ({ radioUrl }) => {
     }
   };
 
+  const handleYoutubeSearch = () => {
+    if (artist && title) {
+      const youtubeSearchUrl = `https://www.youtube.com/results?search_query=${encodeURIComponent(
+        artist + ' ' + title
+      )}`;
+      window.open(youtubeSearchUrl, '_blank');
+    }
+  };
+
   return (
-    <div>
-      {artist && title ? (
-        <div>
-          <h2>{title}</h2>
-          <p>{artist}</p>
-          <button onClick={handleSpotifySearch}>
+    <div className="song-container">
+      <div className="title-artist-container">
+        {artist && title ? (
+          <div>
+            <h2>{title}</h2>
+            <p>{artist}</p>
+          </div>
+        ) : (
+          <p>Loading...</p>
+        )}
+      </div>
+        {artist && title ? (
+            <div className="spotify-button" onClick={handleSpotifySearch}>
             <img src={spotify} alt="Spotify" />
-            </button>
-        </div>
-      ) : (
-        <p>Loading...</p>
-      )}
+            </div>
+          ) : (
+            <p></p>
+          )}
+        {artist && title ? (
+            <div className="spotify-button" onClick={handleYoutubeSearch}>
+            <img src={youtube} alt="Youtube" />
+            </div>
+          ) : (
+            <p></p>
+          )}
     </div>
   );
 };
