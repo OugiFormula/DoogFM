@@ -6,6 +6,7 @@ import logo from '../src/assets/logo.png';
 import Favorites from './Favorites';
 import Popup from './Popup';
 import ChatWidget from './ChatWidget';
+import CurrentStation from './FetchRadioName';
 
 import './App.css';
 
@@ -57,6 +58,7 @@ const App: React.FC = () => {
           </div>
           <div className="title-artist-container">
             {/* The SongTitleFetcher component will display the title and artist */}
+            <CurrentStation radioUrl={radioUrl} />
             <SongTitleFetcher radioUrl={radioUrl} />
           </div>
         </div>

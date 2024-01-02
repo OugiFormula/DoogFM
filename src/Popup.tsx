@@ -16,7 +16,7 @@ const Popup: React.FC<PopupProps> = ({ onClose }) => {
     <div className="popup-container">
       <div className="popup-content">
         <img src={logo} alt="Logo" className="logo" />
-        <p>v1.1 RELEASE</p>
+        <p>v1.2 RELEASE</p>
         <h1>Welcome to DoogFM - Your Ultimate Online Radio Player!</h1>
         <p>
   <strong>🎶 Introducing DoogFM: Elevate Your Radio Experience 🎶</strong>
