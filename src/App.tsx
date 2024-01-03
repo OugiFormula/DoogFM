@@ -39,7 +39,7 @@ const App: React.FC = () => {
         <ArtworkFetcher radioUrl={radioUrl} />
       </div>
       <div className="input-container">
-        <input
+        <input className='radioinput'
           type="text"
           placeholder="Enter radio URL"
           value={radioUrl}
