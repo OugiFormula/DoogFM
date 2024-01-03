@@ -31,7 +31,7 @@ const CurrentStation: React.FC<IcecastMetadataProps> = ({ radioUrl }) => {
   }, [radioUrl]);
 
   return (
-    <div>
+    <div className='currentStation'>
       <p>{currentStation}</p>
     </div>
   );
