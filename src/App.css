@@ -134,6 +134,12 @@ div.radio-player {
   position: fixed;
   z-index: 9999;
 }
+.electron #win-banner {
+  display: none;
+}
+.electron #linux-banner {
+  display: none;
+}
 /* Styles for the Favorites pop-up */
 .favorites-popup-container {
   position: relative;
@@ -298,6 +304,12 @@ div.radio-player {
     display: none;
   }
   .linux-banner {
+    display: none;
+  }
+  .electron #win-banner {
+    display: none;
+  }
+  .electron #linux-banner {
     display: none;
   }
   .song-container {
