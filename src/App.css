@@ -295,20 +295,10 @@ div.radio-player {
     z-index: 9999;
   }
   .win-banner {
-    height: 34px;
-    width: 216px;
-    bottom: 20px;
-    right: 20px;
-    position: fixed;
-    z-index: 9999;
+    display: none;
   }
   .linux-banner {
-    height: 34px;
-    width: 216px;
-    bottom: 20px;
-    right: 20px;
-    position: fixed;
-    z-index: 9999;
+    display: none;
   }
   .song-container {
     display: flex;
