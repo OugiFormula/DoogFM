@@ -16,7 +16,7 @@ const Popup: React.FC<PopupProps> = ({ onClose }) => {
     <div className="popup-container">
       <div className="popup-content">
         <img src={logo} alt="Logo" className="logo" />
-        <p>v1.2 RELEASE</p>
+        <p>v1.2.2 RELEASE</p>
         <h1>Welcome to DoogFM - Your Ultimate Online Radio Player!</h1>
         <p>
   <strong>🎶 Introducing DoogFM: Elevate Your Radio Experience 🎶</strong>
@@ -54,10 +54,10 @@ const Popup: React.FC<PopupProps> = ({ onClose }) => {
   Listen, save, and explore – all with the click of a button. 🎧🌐
 </p>
         <div className="buttons">
-          <a href="https://ko-fi.com/yukiokoito">Ko-fi</a>
-          <a href="https://github.com/OugiFormula">GitHub</a>
-          <a href="https://discord.gg/vEXGQudVcg">Discord</a>
-          <a href="https://doog.cool/">Website</a>
+          <a href="https://ko-fi.com/yukiokoito" target="_blank">Ko-fi</a>
+          <a href="https://github.com/OugiFormula" target="_blank">GitHub</a>
+          <a href="https://discord.gg/vEXGQudVcg" target="_blank">Discord</a>
+          <a href="https://doog.cool/" target="_blank">Website</a>
         </div>
         <button className="close-button" onClick={closePopup}>
           Close

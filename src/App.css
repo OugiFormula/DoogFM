@@ -118,6 +118,22 @@ div.radio-player {
   position: fixed;
   z-index: 9999;
 }
+.win-banner {
+  height: 60px;
+  width: 200px;
+  bottom: 100px;
+  right: 250px;
+  position: fixed;
+  z-index: 9999;
+}
+.linux-banner {
+  height: 60px;
+  width: 200px;
+  bottom: 100px;
+  right: 20px;
+  position: fixed;
+  z-index: 9999;
+}
 /* Styles for the Favorites pop-up */
 .favorites-popup-container {
   position: relative;
@@ -271,6 +287,22 @@ div.radio-player {
     margin-top: 10px; /* Adjust the margin as needed */
   }
   .kofi-banner {
+    height: 34px;
+    width: 216px;
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    z-index: 9999;
+  }
+  .win-banner {
+    height: 34px;
+    width: 216px;
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    z-index: 9999;
+  }
+  .linux-banner {
     height: 34px;
     width: 216px;
     bottom: 20px;

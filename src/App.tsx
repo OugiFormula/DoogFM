@@ -7,6 +7,8 @@ import Favorites from './Favorites';
 import Popup from './Popup';
 import ChatWidget from './ChatWidget';
 import CurrentStation from './FetchRadioName';
+import win from '../src/assets/windowsdownload.png';
+import linux from '../src/assets/linuxdownload.png';
 
 import './App.css';
 
@@ -63,6 +65,20 @@ const App: React.FC = () => {
           </div>
         </div>
         <RadioPlayer radioUrl={radioUrl} audioRef={audioRef} />
+        <a
+          href="https://github.com/OugiFormula/DoogFMClient/releases/download/1.2.2/DoogFM-1.2.2-win32-x64.zip.zip"
+          target="_blank"
+          className="win-banner"
+        >
+          <img className="windows-banner" src={win} alt="install windows 64 bit client" />
+        </a>
+        <a
+          href="https://github.com/OugiFormula/DoogFMClient/releases/download/1.2.2/DoogFM-1.2.2-amd64-deb.zip"
+          target="_blank"
+          className="linux-banner"
+        >
+          <img className="linux-banner" src={linux} alt="install linux 64 bit deb client" />
+        </a>
         <a
           href="https://ko-fi.com/yukiokoito"
           target="_blank"
